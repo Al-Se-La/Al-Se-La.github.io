@@ -1,0 +1,493 @@
+@font-face {
+	font-family: "FiraSans";
+	src: local("☺"), url("../fonts/FiraSans-ExtraLightItalic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Philosopher";
+	src: local("☺"), url("../fonts/Philosopher-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	/*color: rgba(161, 153, 7, 0.979);*/
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+body {
+	/*background-color: green;*/
+	/*background-image: url(../img/bgr.jpg);*/
+	/*background-color: #c2c2c2;*/
+	/*background-color: rgb(194, 194, 194, 50%);*/
+	/*border: 2px dotted black;*/
+}
+.wrapper {
+	/*margin: 0 2% 0 2%;*/
+	/*max-width: 1600px;*/
+	/*max-height: 900px;*/
+	/*background-color: rgba(194, 194, 194, 50%);*/
+	/*border: 2px solid green;*/
+}
+.header_container{
+	position: sticky;
+	top: 0;
+	background-color: brown;
+	/*border: 2px solid red;*/
+}
+.logo{
+	/*border: 2px solid red;*/
+}
+.logo img{
+	margin: 1% 0 1% 2%;
+	width: 60px;
+}
+.content {
+	/*border: 2px solid yellow;*/
+}
+/*--------common_page--------------------*/
+.hi,.courses,.services,.contact{
+	/*height: 100vh;*/
+	background-color: rgba(194, 194, 194);
+	border-bottom: 5px solid brown;
+	/*border: 2px solid red;*/
+}
+.services,.contact{
+	background-color: rgba(194, 194, 194, 50%);
+}
+.hi_block,.services_block,.courses_block,.contact_block{
+	margin: 0 2% 0 2%;
+	/*border: 2px solid blue;*/
+}
+/*----------common--------------*/
+.title{
+	/*margin: 15px 0 18px 2%;*/
+	margin: 0 0 2% 2%;
+	padding-top: 15px;
+	font: 30% Philosopher;
+	/*font-size: 30px;*/
+	font-size: calc(24px + 8 * (100vw / 1366));
+	text-transform:uppercase;
+}
+.btn{
+	display: inline-block;
+	padding: 4px 6px;
+	height: auto;
+	color: white;
+	/*font-size: 20px;*/
+	font-size: calc(18px + 2 * (100vw / 1366));
+	letter-spacing: 3px;
+	background-color: brown;
+	border: 3px solid rgb(255,255,255);
+	border-radius: 20% 0 20% 0;
+	cursor: pointer;
+}
+h3{
+	font: 100% Philosopher;
+	font-size: calc(14px + 3 * (100vw / 1366));
+	text-transform:uppercase;
+	letter-spacing: 1px;
+	color: brown;
+}
+/*-----------hi-----------------*/
+.hi{
+	/*border-bottom: 5px solid green;*/
+}
+.hi_block{
+	/*border: 2px solid blue;*/
+}
+.hi_photo,.about{
+	display: inline-block;
+	width: 49.84%;
+	vertical-align: top;
+	/*border: 2px solid red;*/
+}
+.hi_photo{
+	/*padding: 5px 0;*/
+	min-width: 300px;
+	/*border: 2px solid red;*/
+}
+.hi_photo img{
+	/*margin: 2% 0 2% 0;*/
+	margin: 12px 0 12px 0;
+	/*width: 63%;*/
+	/*width: 554px;*/
+	width: 100%;
+	 height: auto;
+	border: 2px solid white;
+	border-radius: 20% 0 20% 0;
+	/* background-size: cover; */
+	/* background: url(/img/bgr_p1.jpg) no-repeat fixed 100px; */
+	/* object-fit: contain; */
+}
+.about{
+	margin-top: 200px;
+	font: 100% Philosopher;
+	text-align: center;
+	/*border: 2px solid red;*/
+}
+.about_name{
+	/*font-size: 45px;*/
+	font-size: calc(30px + 15 * (100vw / 1366));
+	letter-spacing: 8px;
+}
+.about_specialty{
+	margin-top: 12px;
+	/*font-size: 21px;*/
+	font-size: calc(18px + 3 * (100vw / 1366));
+	/*letter-spacing: 1px;*/
+	color: brown;
+}
+.about_awards{
+	margin-top: 6px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.about_experience{
+	margin-top: 20px;
+	padding: 0 20px 0 80px;
+	/*width: 442px;*/
+	text-align: left;
+	font-size: 16px;
+	font-style: oblique;
+	color: white;
+	/*border: 2px solid red;*/
+}
+.about_experience_year,.about_experience_prof,.about_experience_attitude{
+	display: block;
+	margin-bottom: 3px;
+}
+.about_experience_attitude{
+	margin-bottom: 0;
+}
+.btn_wr{
+	margin: 50px 0 0 0;
+}
+
+/*-----------services---------*/
+.services{
+	/*height: 100vh;*/
+	/*background-color: #c2c2c2;*/
+	/*background-color: rgb(194, 194, 194, 50%);*/
+	/*background-image: url(../img/bgr.jpg);*/
+	/*color: white;*/
+	/*border: 2px solid yellow;*/
+	/*border-bottom: 5px solid brown;*/
+}
+.services_block{
+	/*text-align: justify;*/
+	/*margin: 0;*/
+	/*border: 2px solid green;*/
+}
+.services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
+	display: inline-block;
+	/*margin: 0 4.22% 0 0;*/
+	/*margin: 2px 2.69% 0 0;*/
+	margin: 0 4% 0 0;
+	/*margin: 0 3.28% 0 0;*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*width: 43%;*/
+	/*max-width: 22.8%;*/
+	/*min-width: 22.75%;*/
+	min-width: 21.75%;
+	height: auto;
+	vertical-align: top;
+	/*border: 2px dotted red;*/
+}
+.services_complex{
+	margin-right: 0;
+	/*border: 2px solid red;*/
+}
+.services_photo{
+	width: 280px;
+	/*max-height: 225px;*/
+	/*border: 2px solid red;*/
+}
+.services_photo img{
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	border: 2px solid white;
+	border-radius: 20% 0 20% 0;
+}
+.services_text{
+}
+.services_title{
+	margin: 12px 0 3px 0;
+	/*border: 2px solid red;*/
+}
+.services_descript{
+	/*padding: 4px 0 0 10px;*/
+	/*max-width: 166px;*/
+	max-width: 219px;
+	/*height: 53px;*/
+	/*height: 40px;*/
+	/*font-size: 14px;*/
+	/*font-size: calc(18px + 2 * (100vw / 1366));*/
+	font-size: calc(18px + 0 * (100vw / 1366));
+	font-style: oblique;
+	/*line-height: 15px;*/
+	line-height: 0.9;
+	/*border: 2px solid red;*/
+}
+.services_price{
+	/*margin: 13px 0 5px 0;*/
+	/*margin-bottom: 5px;*/
+	/*text-align: center;*/
+	font-weight: bold;
+	/*border: 2px solid white;*/
+}
+p.services_price{
+	margin-top: 12px;
+	color: brown;
+}
+.services_price span{
+	/*font-weight: normal;*/
+	color: darkgrey;
+}
+.services_booking{
+	/*margin-top: 1%;*/
+	text-align: center;
+	/*border: 2px solid red;*/
+}
+.services_booking_title{
+	margin-bottom: 8px;
+	/*font-size: 24px;*/
+	font-size: calc(18px + 5 * (100vw / 1366));
+	letter-spacing: 5px;
+	/*border: 2px solid red;*/
+}
+.services_lamilashes .services_price{
+	margin-top: 28px;
+}
+.services_shapingbrows .services_price:nth-of-type(2){
+	margin-top: 9px;
+}
+.services_shapingbrows .services_descript:nth-of-type(3),.services_shapingbrows .services_descript:nth-of-type(5){
+	margin-top: 2px;
+}
+.services_shapingbrows .services_price:nth-of-type(4),.services_shapingbrows .services_price:nth-of-type(6){
+	margin-top: 2px;
+}
+.services_booking_btn{
+	margin-bottom: 12px;
+}
+.services_booking_btn .btn_in{
+	margin-right: 40px;
+}
+/*----------course--------*/
+.courses{
+	/*height: 100vh;*/
+	/*background-color: #c2c2c2;*/
+	/*background-color: rgb(255, 239, 223,50%);*/
+	/*background-color: rgb(245, 245, 220,50%);*/
+	/*background-color: rgb(194, 194, 194, 50%);*/
+	/*border: 1px solid red;*/
+	/*border-bottom: 5px solid brown;*/
+	overflow: hidden;
+}
+.courses_block{
+	/*height: 100vh;*/
+	/*display: inline-block;*/
+	/*margin: 0.5% 3% 0 3%;*/
+	/*width: 43%;*/
+	/*height: 80%;*/
+	/*border: 2px solid red;*/
+}
+.courses_basic{
+	/*display: inline-block;*/
+	/*width: 100%;*/
+	/*border: 2px dotted red;*/
+}
+.courses_photo,.courses_text{
+	display: inline-block;
+	vertical-align: top;
+}
+.courses_photo{
+	width: 29%;
+	/*border: 2px solid green;*/
+}
+.courses_photo img{
+	width: 288px;
+	height: 225px;
+	border: 2px solid white;
+	border-radius: 20% 0 20% 0;
+}
+.courses_text{
+	padding: 4px;
+	width: 70%;
+	height: 225px;
+	text-align: center;
+	/*border: 2px solid white;*/
+	/*border-radius: 20% 0 20% 0;*/
+}
+.courses_title{
+	margin: 12px 0 3px 0;
+/*border: 2px solid red;*/
+}
+.courses_descript{
+	margin: 2% 27% 0 27%;
+	letter-spacing: 2px;
+	line-height: 25px;
+	font-size: 18px;
+	/*width: 200px;*/
+	text-align: left;
+	color: white;
+	/*background-color: rgb(255, 239, 223,50%);*/
+	/*border: 2px solid red;*/
+}
+.courses_descript span{
+	margin-left: 280px;
+	text-decoration: underline;
+	/*color: white;*/
+	color: black;
+	cursor: pointer;
+}
+/*----------contact--------*/
+.contact{
+	/*margin-bottom: 50px;*/
+	/*border: 2px solid red;*/
+}
+.contact_block{
+	margin-bottom: 50px;
+	border: 2px solid red;
+}
+.contact_map,.contact_info{
+	/*margin-right: 2%;*/
+	display: inline-block;
+	min-width: 49.84%;
+	height: 100%;
+	vertical-align: top;
+	text-align: center;
+	/*border: 2px solid white;*/
+	/*border-radius: 20% 0 20% 0;*/
+}
+.contact_info{
+	border: 2px solid white;
+	border-radius: 20% 0 20% 0;
+}
+.contact_map{
+	/*height: 450px;*/
+	border: 2px solid yellow;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+}
+.contact_info_btn,.contact_info_location{
+	margin: 16% 0 16%;
+	/*border: 2px solid white;*/
+	/*border-radius: 20% 0 20% 0;*/
+}
+.contact_info_title{
+	margin: 2% 0 3% 0;
+	/*text-align: center;*/
+}
+.contact_text{
+	margin-bottom: 1%;
+	/*color: white;*/
+}
+.contact_info_btn .btn_in,.contact_info_btn .btn_wh{
+	margin-bottom: 1%;
+	/*border: 1px solid black;*/
+}
+.contact_info_btn .btn_in{
+	margin-right: 20px;
+}
+/*------------footer---------------------*/
+footer{
+	/*position: sticky;*/
+	/*bottom: 0;*/
+	background-color: rgb(194, 194, 194, 85%);
+	/*border-top: 5px solid black;*/
+}
