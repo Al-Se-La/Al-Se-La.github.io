@@ -118,20 +118,31 @@ body {
 	/*background-color: rgba(194, 194, 194, 50%);*/
 	/*border: 2px solid green;*/
 }
-.header_container{
+.header{
 	position: sticky;
 	top: 0;
+	height: 13vh;
 	background-color: brown;
 	/*border: 2px solid red;*/
 }
-.logo{
-	/*border: 2px solid red;*/
+.header_block{
+	/*display: inline-block;*/
 }
-.logo img{
+.header_block img{
 	margin: 1% 0 1% 2%;
-	width: 60px;
+	width: 5%;
+	/*width: 60px;*/
+}
+.test{
+	display: inline-block;
+	margin: 2% 0 0 41%;
+	font-size: 28px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 .content {
+	max-width: 1349px;
 	/*border: 2px solid yellow;*/
 }
 /*--------common_page--------------------*/
@@ -148,6 +159,7 @@ body {
 	margin: 0 2% 0 2%;
 	/*border: 2px solid blue;*/
 }
+
 /*----------common--------------*/
 .title{
 	/*margin: 15px 0 18px 2%;*/
@@ -180,37 +192,48 @@ h3{
 }
 /*-----------hi-----------------*/
 .hi{
+	height: 87vh;
 	/*border-bottom: 5px solid green;*/
 }
 .hi_block{
+	height: 100%;
 	/*border: 2px solid blue;*/
 }
 .hi_photo,.about{
 	display: inline-block;
-	width: 49.84%;
+	/*width: 49.84%;*/
+	/*max-width: 49.84%;*/
+	/*max-width: 58%;*/
+	/*height: 85vh;*/
 	vertical-align: top;
 	/*border: 2px solid red;*/
 }
 .hi_photo{
-	/*padding: 5px 0;*/
+	/*padding: 0 0 50% 0;*/
+	width: 42%;
 	min-width: 300px;
+	/*height: 100%;*/
+	/*object-fit: cover;*/
 	/*border: 2px solid red;*/
 }
 .hi_photo img{
-	/*margin: 2% 0 2% 0;*/
-	margin: 12px 0 12px 0;
+	margin-top: 3%;
 	/*width: 63%;*/
 	/*width: 554px;*/
 	width: 100%;
-	 height: auto;
+	/*height: auto;*/
+	/* max-height: 555px;*/
+	 height: 555px;
+	/*object-fit: cover;*/
 	border: 2px solid white;
 	border-radius: 20% 0 20% 0;
-	/* background-size: cover; */
 	/* background: url(/img/bgr_p1.jpg) no-repeat fixed 100px; */
-	/* object-fit: contain; */
 }
 .about{
 	/*margin-top: 200px;*/
+	width: 58%;
+	margin-top: 15%;
+	float: right;
 	font: 100% Philosopher;
 	text-align: center;
 	/*border: 2px solid red;*/
@@ -219,6 +242,7 @@ h3{
 	/*font-size: 45px;*/
 	font-size: calc(30px + 15 * (100vw / 1366));
 	letter-spacing: 8px;
+	text-shadow: 1px 1px white;
 }
 .about_specialty{
 	margin-top: 12px;
@@ -233,26 +257,78 @@ h3{
 	font-weight: bold;
 }
 .about_experience{
-	margin-top: 20px;
-	padding: 0 20px 0 80px;
+	/*margin-top: 20px;*/
+	margin-top: 3%;
+	/*padding: 0 20px 0 80px;*/
+	/*padding: 0 138px 0 160px;*/
+	padding: 0 13% 0 22%;
 	/*width: 442px;*/
 	text-align: left;
-	font-size: 16px;
+	/*font-size: 16px;*/
+	font-size: calc(14px + 2 * (100vw / 1366));
 	font-style: oblique;
 	color: white;
 	/*border: 2px solid red;*/
 }
 .about_experience_year,.about_experience_prof,.about_experience_attitude{
 	display: block;
-	margin-bottom: 3px;
+	/*margin-bottom: 15px;*/
+	margin-bottom: 3%;
 }
+/*.about_experience_year,.about_experience_prof{*/
+/*	text-indent: 5px;*/
+/*}*/
 .about_experience_attitude{
 	margin-bottom: 0;
 }
 .btn_wr{
-	margin: 50px 0 0 0;
+	/*margin: 50px 0 0 0;*/
+	margin-top: 7%;
 }
+/*-----media-hi-------------*/
+@media (max-width: 1270px){
+.about{
+	width: 51%;
+}
+	.hi_photo{
+		width: 49%;
+	}
+}
+@media (max-width: 1100px){
+.about{
+	width: 49%;
+}
+	.hi_photo{
+		width: 51%;
+	}
+}
+@media (max-width: 992px){
+	.hi_photo{
+		width: 59%;
+	}
+	.about{
+		width: 41%;
+	}
+	.about_name{
+		letter-spacing: 6px;
+	}
 
+}
+@media (max-width: 768px){
+	.hi_photo,.about{
+		display: block;
+		width: 100%;
+		height: 50%;
+	}
+	.hi_photo img{
+		width: 250px;
+		height: auto;
+	}
+	.about{
+		margin-top: 0;
+		float: none;
+	}
+}
 /*-----------services---------*/
 .services{
 	/*height: 100vh;*/
@@ -266,31 +342,24 @@ h3{
 .services_block{
 	/*text-align: justify;*/
 	/*margin: 0;*/
+	/*height: 100%;*/
 	/*border: 2px solid green;*/
 }
 .services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
 	display: inline-block;
-	/*margin: 0 4.22% 0 0;*/
-	/*margin: 2px 2.69% 0 0;*/
 	margin: 0 4% 0 0;
-	/*margin: 0 3.28% 0 0;*/
-	/*margin: 0;*/
-	/*padding: 0;*/
-	/*width: 43%;*/
-	/*max-width: 22.8%;*/
-	/*min-width: 22.75%;*/
 	min-width: 21.75%;
+	width: 280px;
 	height: auto;
 	vertical-align: top;
-	/*border: 2px dotted red;*/
+	/*border: 1px dotted red;*/
 }
 .services_complex{
 	margin-right: 0;
 	/*border: 2px solid red;*/
 }
 .services_photo{
-	width: 280px;
-	/*max-height: 225px;*/
+	/*width: 280px;*/
 	/*border: 2px solid red;*/
 }
 .services_photo img{
@@ -301,29 +370,23 @@ h3{
 	border-radius: 20% 0 20% 0;
 }
 .services_text{
+	text-align: left;
 }
 .services_title{
 	margin: 12px 0 3px 0;
 	/*border: 2px solid red;*/
 }
 .services_descript{
-	/*padding: 4px 0 0 10px;*/
-	/*max-width: 166px;*/
 	max-width: 219px;
-	/*height: 53px;*/
-	/*height: 40px;*/
 	/*font-size: 14px;*/
 	/*font-size: calc(18px + 2 * (100vw / 1366));*/
-	font-size: calc(18px + 0 * (100vw / 1366));
+	font-size: calc(16px + 1 * (100vw / 1366));
 	font-style: oblique;
 	/*line-height: 15px;*/
 	line-height: 0.9;
 	/*border: 2px solid red;*/
 }
 .services_price{
-	/*margin: 13px 0 5px 0;*/
-	/*margin-bottom: 5px;*/
-	/*text-align: center;*/
 	font-weight: bold;
 	/*border: 2px solid white;*/
 }
@@ -332,11 +395,9 @@ p.services_price{
 	color: brown;
 }
 .services_price span{
-	/*font-weight: normal;*/
 	color: darkgrey;
 }
 .services_booking{
-	/*margin-top: 1%;*/
 	text-align: center;
 	/*border: 2px solid red;*/
 }
@@ -365,15 +426,56 @@ p.services_price{
 .services_booking_btn .btn_in{
 	margin-right: 40px;
 }
+/*-----media-services--------*/
+@media (max-width: 1340px){
+	.services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
+		/*width: 255px;*/
+		min-width: 20.75%;
+		width: 206px;
+	}
+	}
+@media (max-width: 992px){
+	.services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
+		/*width: 255px;*/
+		margin: 0 8% 2% 8%;
+		min-width: 20.75%;
+		width: 247px;
+	}
+}
+@media (max-width: 763px) {
+	.services_block{
+		text-align: center;
+	}
+	.services_lamilashes, .services_lamibrows, .services_shapingbrows, .services_complex {
+		/*width: 255px;*/
+		margin: 0 8% 2% 8%;
+		min-width: 19.75%;
+		width: 200px;
+	}
+}
+	@media (max-width: 618px){
+	.services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
+		/*width: 255px;*/
+		margin: 0 1% 2% 5%;
+		min-width: 19.75%;
+		width: 200px;
+	}
+	}
+@media (max-width: 479px){
+	.services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
+		margin-bottom: 2%;
+		width: 255px;
+	}
+	}
 /*----------course--------*/
 .courses{
-	/*height: 100vh;*/
+	height: 87vh;
 	/*background-color: #c2c2c2;*/
 	/*background-color: rgb(255, 239, 223,50%);*/
 	/*background-color: rgb(245, 245, 220,50%);*/
 	/*background-color: rgb(194, 194, 194, 50%);*/
 	/*border: 1px solid red;*/
-	/*border-bottom: 5px solid brown;*/
+	/*border-bottom: 5px solid yellow;*/
 	overflow: hidden;
 }
 .courses_block{
@@ -436,16 +538,20 @@ p.services_price{
 /*----------contact--------*/
 .contact{
 	/*margin-bottom: 50px;*/
-	/*border: 2px solid red;*/
+	border-bottom: 1px solid black;
 }
 .contact_block{
-	margin-bottom: 50px;
-	border: 2px solid red;
+	/*margin-bottom: 50px;*/
+	margin-bottom: 3%;
+	height: 63vh;
+	/*border: 2px solid blue;*/
 }
 .contact_map,.contact_info{
 	/*margin-right: 2%;*/
 	display: inline-block;
-	min-width: 49.84%;
+	/*min-width: 49.65%;*/
+	min-width: 49%;
+	max-width: 100%;
 	height: 100%;
 	vertical-align: top;
 	text-align: center;
@@ -453,12 +559,14 @@ p.services_price{
 	/*border-radius: 20% 0 20% 0;*/
 }
 .contact_info{
-	border: 2px solid white;
-	border-radius: 20% 0 20% 0;
+	/*border: 2px solid black;*/
+	/*border-radius: 20% 0 20% 0;*/
 }
 .contact_map{
+	/*margin-left: 5px;*/
+	float: right;
 	/*height: 450px;*/
-	border: 2px solid yellow;
+	/*border: 2px solid yellow;*/
 }
 iframe{
 	width: 100%;
@@ -466,12 +574,17 @@ iframe{
 }
 .contact_info_btn,.contact_info_location{
 	margin: 16% 0 16%;
-	/*border: 2px solid white;*/
+	/*border: 2px solid green;*/
 	/*border-radius: 20% 0 20% 0;*/
 }
 .contact_info_title{
 	margin: 2% 0 3% 0;
 	/*text-align: center;*/
+	/*border: 2px solid red;*/
+}
+.contact_info_title h3{
+	margin-bottom: 1%;
+	/*font-size: 16px;*/
 }
 .contact_text{
 	margin-bottom: 1%;
@@ -484,10 +597,66 @@ iframe{
 .contact_info_btn .btn_in{
 	margin-right: 20px;
 }
+@media (max-width: 1349px){
+
+}
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 616px) and (min-width: 486px){
+	.contact_block{
+		/*margin: 0;*/
+	}
+	.contact_map,.contact_info{
+		display: block;
+		height: 58%;
+	}
+	.contact_info{
+		height: 41%;
+	}
+	.contact_map{
+		/*padding: 0 11px 11px 11px;*/
+		float: none;
+	}
+	.contact_info_btn, .contact_info_location{
+		margin: 7% 0 0 0;
+		display: inline-block;
+		width: 56%;
+		text-align: center;
+		vertical-align: top;
+	}
+	.contact_info_location{
+		width: 44%;
+		float: right;
+	}
+}
+@media (max-width: 485px){
+	.contact_block{
+		/*margin-bottom: 20px;*/
+	}
+	.contact_map,.contact_info {
+		display: block;
+		height: 43%;
+		/*border: 2px solid yellow;*/
+	}
+	.contact_map{
+		/*border: 2px solid red;*/
+		width: 100%;
+		height: 56%;
+	}
+	.contact_info_btn,.contact_info_location{
+		margin: 0;
+		/*border: 2px solid red;*/
+	}
+	}
+
 /*------------footer---------------------*/
 footer{
 	/*position: sticky;*/
 	/*bottom: 0;*/
 	background-color: rgb(194, 194, 194, 85%);
-	/*border-top: 5px solid black;*/
+	border-bottom: 5px solid brown;
 }
