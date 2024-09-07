@@ -10,16 +10,21 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header_container">
-            <div class="logo">
+        <header class="header">
+            <div class="header_block">
                 <img src="img/logo.png" alt="logo"/>
+                <span class="test">this test</span>
             </div>
         </header>
         <div class="content">
             <div class="hi" id="s1">
                 <div class="hi_block">
                     <div class="hi_photo">
-                        <img src="img/photo_main_mod1.jpg" alt="photo"/>
+<!--                        <picture>-->
+<!--                            <source srcset="img/photo_main.jpg" type="image/jpeg" media="(max-width:992px)">-->
+<!--                            <img src="img/photo_main_test.jpg" alt="photo"/>-->
+                            <img src="img/photo_main_mod1.jpg" alt="photo"/>
+<!--                        </picture>-->
                     </div>
                     <div class="about">
                         <p class="about_name">Yulia Lavryk</p>
@@ -115,7 +120,11 @@
                 <div class="contact_block">
                     <div class="contact_info">
                         <div class="contact_info_btn">
-                            <h3 class="contact_info_title">Для связи</h3>
+<!--                            <h3 class="contact_info_title">Для связи</h3>-->
+                            <div class="contact_info_title">
+                                <h3>Остались вопросы?</h3>
+                                <p>Свяжись со мной удобным способом</p>
+                            </div>
                             <div class="btn btn_in">instagram</div>
                             <div class="btn btn_wh">whatsapp</div>
                         </div>
@@ -136,20 +145,8 @@
         <footer>
             <p>© 2024 Al.Se.La</p>
             <h3>Table of Contents</h3>
-            <ol>
-                <li><a href="#p1">Jump to the first paragraph!</a></li>
-                <li><a href="#p2">Jump to the second paragraph!</a></li>
-                <li><a href="#nowhere">This link goes nowhere,
-                        because the target doesn't exist.</a></li>
-            </ol>
-            <h3>My Fun Article</h3>
-            <p id="p1">You can target <i>this paragraph</i> using a
-                URL fragment. Click on the link above to try out!</p>
-            <p id="p2">This is <i>another paragraph</i>, also accessible
-                from the links above. Isn't that delightful?</p>
         </footer>
     </div>
     <script type="text/javascript" src="js/index.js"></script>
-    
 </body>
 </html>
