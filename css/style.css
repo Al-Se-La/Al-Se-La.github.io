@@ -529,16 +529,9 @@ p.services_price{
 /*border: 2px solid red;*/
 }
 .courses_descript{
-	/*margin: 2% 27% 0 27%;*/
-	/*letter-spacing: 2px;*/
-	/*line-height: 25px;*/
 	font-size: 18px;
 	/*width: 200px;*/
 	text-align: left;
-	/*color: white;*/
-	/*color: #f83335;*/
-	/*background-color: rgb(255, 239, 223,50%);*/
-	/*border: 2px solid red;*/
 }
 .courses_descript .s,.courses_descript .a,.courses_descript .b,.courses_descript .c,.courses_descript .d{
 	display: block;
