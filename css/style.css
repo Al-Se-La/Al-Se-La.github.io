@@ -122,24 +122,50 @@ body {
 	position: sticky;
 	top: 0;
 	height: 13vh;
-	background-color: brown;
-	/*border: 2px solid red;*/
+	/*border: 2px solid green;*/
 }
 .header_block{
+	height: 100%;
+	/*border: 2px solid white;*/
 	/*display: inline-block;*/
 }
-.header_block img{
-	margin: 1% 0 1% 2%;
+.header_block_img,.header_block_title{
+	display: inline-block;
+	width: 50%;
+	/*border: 2px solid white;*/
+
+}
+.header_block_img{
+	display: inline-block;
+	min-width: 64px;
 	width: 5%;
-	/*width: 60px;*/
+	height: 100%;
+	vertical-align: top;
+}
+.header_block_img img{
+	margin-top: 15px;
+	/*min-width: 5%;*/
+	/*min-width: 50px;*/
+	width: 60px;
+	height: auto;
+}
+.header_block_title{
+	padding-top: 20px;
+	max-width: 1222px;
+	height: 100%;
+	text-align: right;
 }
 .test{
-	display: inline-block;
-	margin: 2% 0 0 41%;
+	/*margin: 2% 0 0 41%;*/
 	font-size: 28px;
 	color: white;
 	font-weight: bold;
 	letter-spacing: 2px;
+}
+@media(max-width: 350px){
+	.test{
+		font-size: 18px;
+	}
 }
 .content {
 	max-width: 1349px;
@@ -149,18 +175,26 @@ body {
 .hi,.courses,.services,.contact{
 	/*height: 100vh;*/
 	background-color: rgba(194, 194, 194);
-	border-bottom: 5px solid brown;
 	/*border: 2px solid red;*/
 }
 .services,.contact{
 	background-color: rgba(194, 194, 194, 50%);
 }
-.hi_block,.services_block,.courses_block,.contact_block{
+.header_block,.hi_block,.services_block,.courses_block,.contact_block{
 	margin: 0 2% 0 2%;
 	/*border: 2px solid blue;*/
 }
 
 /*----------common--------------*/
+.bgd{
+	background-color: #e60023;
+}
+.bdb{
+	border-bottom: 5px solid #e60023;
+}
+.clr{
+	color: #e60023;
+}
 .title{
 	/*margin: 15px 0 18px 2%;*/
 	margin: 0 0 2% 2%;
@@ -173,13 +207,12 @@ body {
 .btn{
 	display: inline-block;
 	/*padding: 4px 6px;*/
-	padding: 4px 6px;
+	padding: 6px 6px;
 	height: auto;
 	color: white;
 	/*font-size: 20px;*/
 	font-size: calc(18px + 2 * (100vw / 1366));
 	/*letter-spacing: 3px;*/
-	background-color: brown;
 	border: 3px solid rgb(255,255,255);
 	border-radius: 20% 0 20% 0;
 	cursor: pointer;
@@ -189,7 +222,6 @@ h3{
 	font-size: calc(14px + 3 * (100vw / 1366));
 	text-transform:uppercase;
 	letter-spacing: 1px;
-	color: brown;
 }
 /*-----------hi-----------------*/
 .hi{
@@ -252,7 +284,6 @@ h3{
 	/*font-size: 21px;*/
 	font-size: calc(18px + 3 * (100vw / 1366));
 	/*letter-spacing: 1px;*/
-	color: brown;
 }
 .about_awards{
 	margin-top: 6px;
@@ -400,7 +431,6 @@ h3{
 }
 p.services_price{
 	margin-top: 12px;
-	color: brown;
 }
 .services_price span{
 	color: darkgrey;
@@ -492,8 +522,7 @@ p.services_price{
 	/*overflow: hidden;*/
 }
 .courses_block{
-
-	height: 100vh;
+	padding-bottom: 20px;
 	/*border: 2px solid red;*/
 }
 .courses_basic{
@@ -520,7 +549,6 @@ p.services_price{
 	/*width: 70%;*/
 	/*height: 225px;*/
 	/*text-align: center;*/
-
 	/*border: 2px solid white;*/
 	/*border-radius: 20% 0 20% 0;*/
 }
