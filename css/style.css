@@ -277,7 +277,7 @@ h3{
 	/*font-size: 45px;*/
 	font-size: calc(30px + 15 * (100vw / 1366));
 	letter-spacing: 8px;
-	text-shadow: 1px 1px white;
+	text-shadow: 1px -3px 6px white;
 }
 .about_specialty{
 	margin-top: 12px;
@@ -302,6 +302,7 @@ h3{
 	font-size: calc(14px + 2 * (100vw / 1366));
 	font-style: oblique;
 	color: white;
+	text-shadow: 1px 1px 6px black;
 	/*border: 2px solid red;*/
 }
 .about_experience_year,.about_experience_prof,.about_experience_attitude{
@@ -430,7 +431,10 @@ h3{
 	/*border: 2px solid white;*/
 }
 p.services_price{
-	margin-top: 12px;
+	margin-top: 11px;
+}
+.services_lamilashes .services_price,.services_complex .services_price{
+	margin-top: 27px;
 }
 .services_price span{
 	color: darkgrey;
@@ -446,18 +450,15 @@ p.services_price{
 	letter-spacing: 5px;
 	/*border: 2px solid red;*/
 }
-.services_lamilashes .services_price{
-	margin-top: 28px;
-}
-.services_shapingbrows .services_price:nth-of-type(2){
-	margin-top: 9px;
-}
-.services_shapingbrows .services_descript:nth-of-type(3),.services_shapingbrows .services_descript:nth-of-type(5){
-	margin-top: 2px;
-}
-.services_shapingbrows .services_price:nth-of-type(4),.services_shapingbrows .services_price:nth-of-type(6){
-	margin-top: 2px;
-}
+/*.services_shapingbrows .services_price:nth-of-type(2){*/
+/*	margin-top: 9px;*/
+/*}*/
+/*.services_shapingbrows .services_descript:nth-of-type(3),.services_shapingbrows .services_descript:nth-of-type(5){*/
+/*	margin-top: 2px;*/
+/*}*/
+/*.services_shapingbrows .services_price:nth-of-type(4),.services_shapingbrows .services_price:nth-of-type(6){*/
+/*	margin-top: 2px;*/
+/*}*/
 .services_booking_btn{
 	margin-bottom: 12px;
 }
@@ -506,6 +507,12 @@ p.services_price{
 	}
 	.services_lamilashes,.services_lamibrows,.services_shapingbrows,.services_complex{
 		width: 255px;
+	}
+	p.services_price{
+		margin: 7px 0 7px 0;
+	}
+	.services_lamilashes .services_price,.services_complex .services_price{
+		margin: 7px 0 7px 0;
 	}
 	.services_photo img{
 	}
@@ -608,12 +615,10 @@ p.services_price{
 /*}*/
 /*----------contact--------*/
 .contact{
-	/*margin-bottom: 50px;*/
+	height: 82vh;
 	border-bottom: 1px solid black;
 }
 .contact_block{
-	/*margin-bottom: 50px;*/
-	margin-bottom: 3%;
 	height: 63vh;
 	/*border: 2px solid blue;*/
 }
@@ -687,9 +692,8 @@ iframe{
 @media (max-width: 768px){
 
 }
-@media (max-width: 616px) and (min-width: 486px){
+@media (max-width: 616px) and (min-width: 520px){
 	.contact_block{
-		/*margin: 0;*/
 	}
 	.contact_map,.contact_info{
 		display: block;
@@ -699,7 +703,6 @@ iframe{
 		height: 41%;
 	}
 	.contact_map{
-		/*padding: 0 11px 11px 11px;*/
 		float: none;
 	}
 	.contact_info_btn, .contact_info_location{
@@ -714,9 +717,9 @@ iframe{
 		float: right;
 	}
 }
-@media (max-width: 485px){
+@media (max-width: 519px){
 	.contact_block{
-		/*margin-bottom: 20px;*/
+		height: 71vh;
 	}
 	.contact_map,.contact_info {
 		display: block;
@@ -739,5 +742,4 @@ footer{
 	/*position: sticky;*/
 	/*bottom: 0;*/
 	background-color: rgb(194, 194, 194, 85%);
-	border-bottom: 5px solid brown;
 }
