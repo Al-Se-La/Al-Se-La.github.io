@@ -146,7 +146,7 @@ body {
 	margin-top: 8px;
 	/*min-width: 5%;*/
 	/*min-width: 50px;*/
-	width: 40px;
+	width: 42px;
 	height: auto;
 }
 .header_menu{
@@ -172,8 +172,8 @@ body {
 .header_block_img img{
 	position: relative;
 	display: none;
-	margin-top: 8px;
-	width: 35px;
+	margin: 8px 10px 0 0;
+	width: 40px;
 	/*background-color: white;*/
 	z-index: 1;
 }
@@ -286,8 +286,13 @@ body {
 	border-radius: 20% 0 20% 0;
 	cursor: pointer;
 }
-.btn:hover{
-	filter: brightness(0.7);
+.btn:hover {
+	color: #fff;
+	box-shadow: 5px 1px 6px black;
+	background-color: rgba(194, 194, 194);
+	border: 2px solid rgba(194, 194, 194);
+	/* color: #000; */
+	/* filter: brightness(0.7); */
 }
 h3{
 	font: 100% Philosopher;
@@ -694,7 +699,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(95dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(94dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
