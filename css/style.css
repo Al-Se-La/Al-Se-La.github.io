@@ -122,28 +122,28 @@ body {
 	position: sticky;
 	top: 0;
 	height: 8vh;
-	border: 2px solid green;
+	/*border: 2px solid green;*/
 }
 .header_block{
 	height: 100%;
 	/*border: 2px solid white;*/
 	/*display: inline-block;*/
 }
-.header_block_img,.header_block_title{
+.header_block_logo,.header_block_title{
 	display: inline-block;
 	width: 50%;
 	/*border: 2px solid white;*/
 
 }
-.header_block_img{
+.header_block_logo{
 	display: inline-block;
 	min-width: 64px;
 	width: 5%;
 	height: 100%;
 	vertical-align: top;
 }
-.header_block_img img{
-	margin-top: 7px;
+.header_block_logo img{
+	margin-top: 8px;
 	/*min-width: 5%;*/
 	/*min-width: 50px;*/
 	width: 40px;
@@ -153,30 +153,80 @@ body {
 	position: fixed;
 	top: 2%;
 	right: 3%;
-	/*display: inline-block;*/
-	display: none;
+	display: inline-block;
 	min-width: 90%;
 	height: auto;
 	text-align: center;
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 }
 .header_menu li{
 	display: inline-block;
 	margin-left: 8%;
 	font-size: 22px;
 }
-.header_block_burger{
+.header_block_img{
 	display: inline-block;
 	float: right;
 	/*border: 2px solid yellow;*/
 }
-.header_block_burger img{
-	margin-top: 7px;
+.header_block_img img{
+	position: relative;
+	display: none;
+	margin-top: 8px;
 	width: 35px;
+	/*background-color: white;*/
+	z-index: 1;
 }
-@media(max-width: 350px){
-	.test{
-		font-size: 18px;
+/*todo написать js для header что если ширина экрана больше 507px то .hidden должен быть display:none */
+.hidden{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	background: #555555;
+	background-blend-mode: darken;
+	/*background: pink;*/
+	/*z-index: 10;*/
+/*border: 2px solid white;*/
+}
+.hidden_list{
+	position: absolute;
+	top: 20%;
+	left: 27%;
+	width: 160px;
+	height: auto;
+	float: right;
+	font-size: 32px;
+}
+.hidden_list li{
+	margin-bottom: 12%;
+}
+.hidden_list li:last-child{
+	margin-bottom: 0;
+}
+.hidden_img{
+	top: 30px;
+	right: 30px;
+}
+
+@media(max-width: 510px){
+	.header_menu{
+		display: none;
+		text-align: left;
+	}
+	.header_menu li{
+		text-align: left;
+		font-size: 32px;
+	}
+	.hidden{
+		display: block;
+	}
+	.hidden_list{
+		/*display: block;*/
+	}
+	.header_block_img img{
+		display: block;
 	}
 }
 .content {
@@ -198,6 +248,10 @@ body {
 }
 
 /*----------common--------------*/
+.active {
+	background-color: #ff0000;
+	font-weight: bold;
+}
 .bgd{
 	background-color: #e60023;
 }
@@ -228,6 +282,9 @@ body {
 	border: 3px solid rgb(255,255,255);
 	border-radius: 20% 0 20% 0;
 	cursor: pointer;
+}
+.btn:hover{
+	filter: brightness(0.7);
 }
 h3{
 	font: 100% Philosopher;
