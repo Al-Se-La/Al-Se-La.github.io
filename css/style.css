@@ -685,7 +685,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(95dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(96dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
