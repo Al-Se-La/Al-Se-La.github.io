@@ -689,7 +689,7 @@ p.services_price{
 	}
 }
 .contact{
-	height: 87vh;
+	/*height: 87vh;*/
 	border-bottom: 1px solid black;
 }
 .contact_block{
