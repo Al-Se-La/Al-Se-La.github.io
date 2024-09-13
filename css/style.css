@@ -129,25 +129,22 @@ body {
 	/*border: 2px solid white;*/
 	/*display: inline-block;*/
 }
-.header_block_logo,.header_block_title{
+.header_block_logo{
 	display: inline-block;
-	width: 50%;
+	/*min-width: 64px;*/
+	min-width: 5%;
+	/*width: 5%;*/
+	height: 100%;
+	vertical-align: top;
 	/*border: 2px solid white;*/
 
 }
-.header_block_logo{
-	display: inline-block;
-	min-width: 64px;
-	width: 5%;
-	height: 100%;
-	vertical-align: top;
-}
 .header_block_logo img{
-	margin-top: 8px;
-	/*min-width: 5%;*/
-	/*min-width: 50px;*/
-	width: 42px;
-	height: auto;
+	/*margin-top: 8px;*/
+	margin-top: 16%;
+	/*width: 42px;*/
+	/*height: auto;*/
+	height: 68%;
 }
 .header_menu{
 	position: fixed;
@@ -167,14 +164,16 @@ body {
 .header_block_img{
 	display: inline-block;
 	float: right;
+	height: 100%;
 	/*border: 2px solid yellow;*/
 }
 .header_block_img img{
 	position: relative;
 	display: none;
-	margin: 8px 10px 0 0;
-	width: 40px;
-	/*background-color: white;*/
+	margin: 10% 10px 0 0;
+	/*width: 40px;*/
+	height: 80%;
+	background-color: white;
 	z-index: 1;
 }
 /*todo написать js для header что если ширина экрана больше 507px то .hidden должен быть display:none */
@@ -221,12 +220,14 @@ body {
 	}
 	.hidden{
 		display: block;
+		transition: 0.5s;
 	}
 	.hidden_list{
 		/*display: block;*/
 	}
 	.header_block_img img{
 		display: block;
+		transition: 0.4s;
 	}
 }
 .content {
@@ -699,7 +700,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(94dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(95dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
