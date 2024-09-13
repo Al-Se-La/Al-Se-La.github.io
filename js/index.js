@@ -64,12 +64,14 @@ img[0].addEventListener('click',toggleMenu);
 // window.addEventListener('click', highlightMenuItem);
 ///////////////////////////////////////////////////////////////////////////////
 const pageHi = document.getElementById('s4');
-console.log(pageHi);
 function adjustHeight() {
-    const windowHeight = window.innerHeight;
-console.log(windowHeight);
+    const windowHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    console.log(windowHeight);
+
     if (pageHi) {
-        pageHi.style.height = `${windowHeight}px`- 8+'vh';
+        // 8vh высота header, её нужно вычесть из windowHeight
+        const headerHeight = window.innerHeight * 0.08; // 8vh
+        pageHi.style.height = `${windowHeight - headerHeight}px`;
     }
 }
 window.addEventListener('load', adjustHeight);
