@@ -474,7 +474,7 @@ h3{
 	.hi_photo{
 		position: relative;
 		width: 100%;
-		height: 56%;
+		height: 52%;
 		/*border: 2px solid red;*/
 	}
 	.hi_photo img{
@@ -482,7 +482,7 @@ h3{
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-53%);
-		width: 100%;
+		width: 73%;
 		height: auto;
 	}
 }
@@ -745,7 +745,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(96.1dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(96dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
