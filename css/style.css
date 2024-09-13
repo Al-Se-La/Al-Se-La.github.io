@@ -170,9 +170,9 @@ body {
 .header_block_img img{
 	position: relative;
 	display: none;
-	margin: 10% 10px 0 0;
+	margin: 11% 9px 0 0;
 	/*width: 40px;*/
-	height: 80%;
+	height: 78%;
 	/*background-color: white;*/
 	z-index: 1;
 }
@@ -453,10 +453,13 @@ h3{
 	.hi_photo,.about{
 		display: block;
 		width: 100%;
-		height: 50%;
+		/*height: 50%;*/
+		height: 54%;
+		/*border: 2px solid red;*/
 	}
 	.hi_photo img{
-		width: 250px;
+		/*width: 250px;*/
+		width: 100%;
 		height: auto;
 	}
 	.about{
@@ -465,6 +468,32 @@ h3{
 	}
 	.about_experience{
 		padding: 0 3% 0 4%;
+	}
+}
+@media (max-width: 451px){
+	.hi_photo{
+		position: relative;
+		width: 100%;
+		height: 56%;
+		/*border: 2px solid red;*/
+	}
+	.hi_photo img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-53%);
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-width: 372px){
+	.hi_photo,.about{
+		width: 100%;
+		height: 56%;
+	}
+	.hi_photo img{
+		width: 100%;
+		height: auto;
 	}
 }
 /*-----------services---------*/
@@ -716,7 +745,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(96.5dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(96.2dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
