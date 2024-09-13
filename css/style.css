@@ -235,6 +235,7 @@ body {
 }
 /*--------common_page--------------------*/
 .hi,.courses,.services,.contact{
+	scroll-margin-top: 8vh;
 	/*height: 100vh;*/
 	background-color: rgba(194, 194, 194);
 	/*border: 2px solid red;*/
@@ -274,10 +275,12 @@ body {
 	display: inline-block;
 	/*padding: 4px 6px;*/
 	padding: 6px 6px;
+	min-width: 126.27px;
+	min-height: 36.47px;
 	height: auto;
 	color: white;
 	/*font-size: 20px;*/
-	font-size: calc(18px + 2 * (100vw / 1366));
+	font-size: calc(17px + 2 * (100vw / 1366));
 	/*letter-spacing: 3px;*/
 	border: 3px solid rgb(255,255,255);
 	border-radius: 20% 0 20% 0;
@@ -293,7 +296,13 @@ h3{
 	letter-spacing: 1px;
 }
 /*-----------hi-----------------*/
+/*@supports (height: 100dvh) {*/
+/*	#s1 {*/
+/*		height: calc(100dvh - 8vh); !* 100dvh минус высота заголовка 8vh *!*/
+/*	}*/
+/*}*/
 .hi{
+	/*scroll-margin-top: 8vh;*/
 	height: 92vh;
 	/*border-bottom: 5px solid green;*/
 	/*background:  url('../img/pencil.webp') no-repeat center /cover;*/
@@ -685,7 +694,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(96dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(95dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
