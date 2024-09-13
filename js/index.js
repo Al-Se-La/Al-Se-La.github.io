@@ -65,13 +65,22 @@ img[0].addEventListener('click',toggleMenu);
 ///////////////////////////////////////////////////////////////////////////////
 const pageHi = document.getElementById('s4');
 function adjustHeight() {
-    const windowHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-    console.log(windowHeight);
-
-    if (pageHi) {
-        // 8vh высота header, её нужно вычесть из windowHeight
+    // const windowHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    // console.log(window.visualViewport.height);
+    //
+    // if (pageHi) {
+    //     // 8vh высота header, её нужно вычесть из windowHeight
         const headerHeight = window.innerHeight * 0.08; // 8vh
-        pageHi.style.height = `${windowHeight - headerHeight}px`;
+    //     pageHi.style.height = `${windowHeight - headerHeight}px`;
+    // }
+    if (!CSS.supports('height', '100dvh')) {
+        const windowHeight = window.innerHeight; // В случае отсутствия dvh, берём стандартную высоту окна
+        console.log('Window height (excluding browser UI):', windowHeight);
+
+        if (pageHi) {
+            // Устанавливаем высоту #s4 как видимая высота окна минус высота header (8vh)
+            pageHi.style.height = `${windowHeight - headerHeight}px`;
+        }
     }
 }
 window.addEventListener('load', adjustHeight);

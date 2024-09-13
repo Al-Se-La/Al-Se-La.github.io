@@ -683,6 +683,11 @@ p.services_price{
 /*	cursor: pointer;*/
 /*}*/
 /*----------contact--------*/
+@supports (height: 100dvh) {
+	#s4 {
+		height: calc(100dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+	}
+}
 .contact{
 	height: 87vh;
 	border-bottom: 1px solid black;
