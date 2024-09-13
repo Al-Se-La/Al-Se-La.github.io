@@ -141,7 +141,7 @@ body {
 }
 .header_block_logo img{
 	/*margin-top: 8px;*/
-	margin-top: 16%;
+	margin-top: 17%;
 	/*width: 42px;*/
 	/*height: auto;*/
 	height: 68%;
@@ -173,7 +173,7 @@ body {
 	margin: 10% 10px 0 0;
 	/*width: 40px;*/
 	height: 80%;
-	background-color: white;
+	/*background-color: white;*/
 	z-index: 1;
 }
 /*todo написать js для header что если ширина экрана больше 507px то .hidden должен быть display:none */
@@ -700,7 +700,7 @@ p.services_price{
 /*----------contact--------*/
 @supports (height: 100dvh) {
 	#s4 {
-		height: calc(96dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
+		height: calc(97dvh - 8vh); /* 100dvh минус высота заголовка 8vh */
 	}
 }
 .contact{
