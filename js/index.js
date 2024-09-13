@@ -22,7 +22,6 @@ btn.forEach((button) => {
 //"https://wa.me/995571206128"
 //"https://api.whatsapp.com/send?phone=995571206128"
 //"https://instagram.com/lavrina.lami/"
-///////////////////////////////////////////////////////////////
 let nav = document.querySelector('nav');
 let ul = document.querySelector('ul');
 let li = document.querySelectorAll('li');
@@ -40,9 +39,7 @@ function toggleMenu(){
 img[0].addEventListener('click',toggleMenu);
 [...li].forEach((item) => {
     item.addEventListener('click',toggleMenu);
-    // !ul.classList.contains('hidden_list') ? item.addEventListener('click',toggleMenu) : null;
 });
-//////////////////////////////////////////////////////////////////////////////////
 // function highlightMenuItem() {
 //         const currentHash = window.location.hash;
 //     const menuItems = document.querySelectorAll('.menu-item');
@@ -60,11 +57,20 @@ img[0].addEventListener('click',toggleMenu);
 //         }
 //     }
 // }
-//
 // // Вызываем функцию при загрузке страницы
 // window.addEventListener('load', highlightMenuItem);
-//
 // // Вызываем функцию при изменении хэша
 // window.addEventListener('hashchange', highlightMenuItem);
 // window.addEventListener('click', highlightMenuItem);
-
+///////////////////////////////////////////////////////////////////////////////
+const pageHi = document.getElementById('s4');
+console.log(pageHi);
+function adjustHeight() {
+    const windowHeight = window.innerHeight;
+console.log(windowHeight);
+    if (pageHi) {
+        pageHi.style.height = `${windowHeight}px`- 8+'vh';
+    }
+}
+window.addEventListener('load', adjustHeight);
+window.addEventListener('resize', adjustHeight);
