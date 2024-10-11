@@ -1,178 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/logo_02.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
     <title>Ламинирование ресниц и бровей</title>
 </head>
+
 <body>
-    <div class="wrapper">
+    <div class="page">
         <header class="header bgd">
-            <div class="header_block">
-                <div class="header_block_logo">
-                    <img src="img/logo.png" alt="logo"/>
-                </div>
-                <nav class="header_menu">
-                    <ul class="header_menu_list">
-                        <li class="ac"><a href="#s1">главная</a></li>
-                        <li><a href="#s2">услуги</a></li>
-                        <li><a href="#s3">курсы</a></li>
-                        <li><a href="#s4">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header_block_img">
-                    <img src="img/menu-icon1.png" class="burger_img" alt="burger"/>
-<!--                    <img src="img/cross.png" alt="burger"/>-->
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <img src="img/logo_main_test_07.png" alt="logo" />
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item active"><a href="#s1">главная</a></li>
+                            <li class="menu__item"><a href="#s2">услуги</a></li>
+                            <li class="menu__item"><a href="#s3">курсы</a></li>
+                            <li class="menu__item"><a href="#s4">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__menu-icon">
+                        <img src="img/menu-icon.png" class="menu-icon" alt="menu" />
+                    </div>
                 </div>
             </div>
         </header>
-        <div class="content">
-            <div class="hi bdb" id="s1">
-                <div class="hi_block">
-                    <div class="hi_photo">
-<!--                        <picture>-->
-<!--                            <source srcset="img/photo_main.jpg" type="image/jpeg" media="(max-width:992px)">-->
-<!--                            <img src="img/photo_main_test.jpg" alt="photo"/>-->
-                            <img src="img/photo_main_mod2.jpg" alt="photo"/>
-<!--                        </picture>-->
-                    </div>
-                    <div class="about">
-                        <h1 class="about_name">Yulia Lavryk</h1>
-                        <h1 class="about_specialty clr">Lamimaker & Brows master</h1>
-<!--                        <p class="about_awards">победитель международных конкурсов</p>-->
-                        <p class="about_experience">
-                            <span class="about_experience_year">Около 5 лет опыта в бьюти сфере, за спиной более 10 успешных
-                                завершенных обучений в профессиональной сфере.</span>
-                            <span class="about_experience_prof">Мой опыт и профессионализм позволяют справляться с задачами любой сложности.</span>
-                            <span class="about_experience_attitude">Индивидуальный подход к каждому клиенту.</span>
-                        </p>
-                        <div class="btn btn_wr bgd"><a href="#s4">ЗАПИСАТЬСЯ</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="services bdb" id="s2">
-                <h2 class="title">Услуги</h2>
-                <div class="services_block">
-                   <div class="services_lamilashes">
-                     <div class="services_photo">
-                        <img src="img/lami_lashes.jpg" alt="lla">
-                     </div>
-                     <div class="services_text">
-                        <h3 class="services_title clr">Ламинирование ресниц</h3>
-                        <p class="services_descript">ламинирование ресниц + окрашивание + ботокс</p>
-                        <p class="services_price clr"><span>Стоимость услуги -</span> 90 лари</p>
-                     </div>
-                </div>
-                   <div class="services_lamibrows">
-                        <div class="services_photo">
-                            <img src="img/lami_brows.jpg" alt="lbr">
+        <main class="content">
+            <section class="intro bdb" id="s1">
+                <div class="container">
+                    <div class="intro__container">
+                        <div class="intro__image">
+                            <img src="img/photo_main.jpg" alt="photo" />
                         </div>
-                        <div class="services_text">
-                                 <h3 class="services_title clr">Ламинирование бровей</h3>
-                                 <p class="services_descript">ламинирование бровей + коррекция воск/пинцет + уходовая процедура</p>
-                                 <p class="services_price clr"><span>Стоимость услуги -</span> 90 лари</p>
-                        </div>
-                </div>
-                   <div class="services_shapingbrows">
-                        <div class="services_photo">
-                            <img src="img/shaping_brows.jpg" alt="br">
-                        </div>
-                            <div class="services_text">
-                                <h3 class="services_title clr">Оформление бровей</h3>
-                                <p class="services_descript">моделирование бровей + окрашивание + коррекция воск/пинцет</p>
-                                <p class="services_price clr"><span>Стоимость услуги -</span> 60 лари</p>
-<!--                                <p class="services_descript">окрашивание бровей</p>-->
-<!--                                <p class="services_price"><span>Стоимость услуги -</span> 40 лари</p>-->
-<!--                                <p class="services_descript">коррекция бровей воск/пинцет</p>-->
-<!--                                <p class="services_price"><span>Стоимость услуги -</span> 30 лари</p>-->
-                        </div>
-                </div>
-                   <div class="services_complex">
-                        <div class="services_photo">
-                            <img src="img/complex.jpg" alt="complex">
-                        </div>
-                            <div class="services_text">
-                                <h3 class="services_title clr">Комплекс</h3>
-                            <p class="services_descript">ламинирование ресниц + ламинирование бровей</p>
-                            <p class="services_price clr"><span>Стоимость услуги -</span> 150 лари</p>
-                            </div>
-<!--                            <div class="services_btn">записаться</div>-->
-                </div>
-                 </div>
-                <div class="services_booking">
-                    <h2 class="services_booking_title title">Записаться на прием</h2>
-                    <div class="services_booking_btn">
-                        <div class="btn btn_in bgd">INSTAGRAM</div>
-                        <div class="btn btn_wh bgd">WHATSAPP</div>
-                    </div>
-                </div>
-            </div>
-            <div class="courses bdb" id="s3">
-                <div class="title">Курсы</div>
-                <div class="courses_block">
-                    <div class="courses_basic">
-                        <div class="courses_photo">
-                            <img src="img/courses.jpg" alt="courses">
-                        </div>
-                        <div class="courses_text">
-                            <h3 class="courses_title">Базовое обучение</h3>
-                            <p class="courses_descript">
-                                <span class="s">то что прислала Lorem ipsum dolor sit amet.</span>
-                                <span class="s sa">то что прислала Lorem ipsum dolor sit amet.</span>
-                                <span class="a">другой оттенок. Lorem ipsum dolor sit amet.</span>
-                                <span class="a aa">другой оттенок. Lorem ipsum dolor sit amet.</span>
-                                <span class="b">третий оттенок.Lorem ipsum dolor sit amet.</span>
-                                <span class="b ba">третий оттенок.Lorem ipsum dolor sit amet.</span>
-                                <span class="c">четвертый оттенок. Lorem ipsum dolor sit amet.</span>
-                                <span class="c ca">четвертый оттенок. Lorem ipsum dolor sit amet.</span>
-                                <span class="d">пятый оттенок. Lorem ipsum dolor sit amet.</span>
-                                <span class="d da">пятый оттенок. Lorem ipsum dolor sit amet.</span>
-                                <span>сделал меню, проверь механику(удобство и правильность работы) - стилистика
-                                     обсуждаема. уменьшил текст на кнопках(если не достаточно говори). исправил
-                                    header(красная полоса с логотипом и кнопкой меню) должно быть все хорошо, если нет
-                                    говори.
-                                </span>
+                        <div class="intro__about">
+                            <h1 class="intro__name">Yulia Lavryk</h1>
+                            <h2 class="intro__profession clr">Lamimaker & Brows Master</h2>
+                            <p class="intro__experience">
+                                <span class="intro__years">Около 5 лет опыта в бьюти-сфере, за спиной более 10 успешных завершенных обучений в профессиональной сфере.</span>
+                                <span class="intro__skills">Мой опыт и профессионализм позволяют справляться с задачами любой сложности.</span>
+                                <span class="intro__approach">Индивидуальный подход к каждому клиенту.</span>
                             </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="contact" id="s4">
-                <div class="title">Контакты</div>
-                <div class="contact_block">
-                    <div class="contact_info">
-                        <div class="contact_info_btn">
-<!--                            <h3 class="contact_info_title">Для связи</h3>-->
-                            <div class="contact_info_title">
-                                <h3 class="clr">Остались вопросы?</h3>
-                                <p>Свяжись со мной удобным способом</p>
+                            <div class="intro__button-write">
+                                <div class="button button__write bgd"><a href="#s4">записаться</a></div>
                             </div>
-                            <div class="btn btn_in bgd">INSTAGRAM</div>
-                            <div class="btn btn_wh bgd">WHATSAPP</div>
                         </div>
-                        <div class="contact_info_location abc">
-                            <h3 class="contact_info_title clr">Локация</h3>
-                            <p class="contact_text">Georgia,Tbilisi</p>
-                            <p class="contact_text">44 Ilia Chavchavadze Avenue</p>
-                        </div>
-                    </div>
-                    <div class="contact_map">
-                        <!--                        <div class="contact_map_container">-->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.502006484532!2d44.76178887916965!3d41.70968510774432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447333b02245b7%3A0xd9fdcd815074e575!2zNDQgSWxpYSBDaGF2Y2hhdmFkemUgQXZlbnVlLCBUJ2JpbGlzaSwg0JPRgNGD0LfQuNGP!5e0!3m2!1sru!2sua!4v1725190410433!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!--                        </div>-->
                     </div>
                 </div>
+            </section>
+            <section class="services bdb" id="s2">
+                <div class="container">
+                    <div class="services__container">
+                        <div class="title">
+                            <h2 class="title__page">Услуги</h2>
+                        </div>
+                        <div class="services__list">
+                            <div class="service service_lashes">
+                                <div class="service__image">
+                                    <img src="img/lami_lashes_service.jpg" alt="lamination lashes" />
+                                </div>
+                                <div class="service__description">
+                                    <h3 class="service__title clr">Ламинирование ресниц</h3>
+                                    <p class="service__details">ламинирование ресниц + окрашивание + ботокс</p>
+                                    <p class="service__price clr"><span>Стоимость услуги -</span> 90 лари</p>
+                                </div>
+                            </div>
+                            <div class="service service_brows">
+                                <div class="service__image">
+                                    <img src="img/lami_brows_service.jpg" alt="lamination brows" />
+                                </div>
+                                <div class="service__description">
+                                    <h3 class="service__title clr">Ламинирование бровей</h3>
+                                    <p class="service__details">ламинирование бровей + коррекция воск/пинцет + уходовая процедура</p>
+                                    <p class="service__price clr"><span>Стоимость услуги -</span> 90 лари</p>
+                                </div>
+                            </div>
+                            <div class="service service_brow-shaping">
+                                <div class="service__image">
+                                    <img src="img/shaping_brows.jpg" alt="brow shaping" />
+                                </div>
+                                <div class="service__description">
+                                    <h3 class="service__title clr">Оформление бровей</h3>
+                                    <p class="service__details">моделирование бровей + окрашивание + коррекция воск/пинцет</p>
+                                    <p class="service__price clr"><span>Стоимость услуги -</span> 60 лари</p>
+                                </div>
+                            </div>
+                            <div class="service service_complex">
+                                <div class="service__image">
+                                    <img src="img/complex_service.jpg" alt="complex service" />
+                                </div>
+                                <div class="service__description">
+                                    <h3 class="service__title clr">Комплекс</h3>
+                                    <p class="service__details">ламинирование ресниц + ламинирование бровей</p>
+                                    <p class="service__price clr"><span>Стоимость услуги -</span> 150 лари</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__booking">
+                            <h2 class="services__booking-title title">Записаться</h2>
+                            <div class="services__booking-buttons">
+                                <div class="button button_in bgd">instagram</div>
+                                <div class="button button_wh bgd">whatsapp</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="courses bdb" id="s3">
+                <div class=" container">
+                    <div class="courses__container">
+                        <div class="title">
+                            <h2 class="title__page">Курсы</h2>
+                        </div>
+                        <div class="courses__list">
+                            <div class="courses__item courses__item_basic">
+                                <h3 class="courses__title clr">Lami Lash Master</h3>
+                                <div class="courses__description">
+                                    <p class="courses__text">Индивидуальный курс "Просто о сложном".</p>
+                                    <p class="courses__text">Узнай все тонкости ламинирования ресниц за 1 день.</p>
+                                </div>
+                                <div class="courses__more">
+                                    <a href="#basic" class="courses__more-link">Подробнее...</a>
+                                </div>
+                                <div class="courses__details" id="basic" style="display: none;">
+                                    <div class="courses__details-content">
+                                        <div class="courses__details-btn">
+                                            <img src="img/delete-icon.png" class="details-icon" alt="delete"/>
+                                        </div>
+                                        <h4 class="courses__details-title clr">Индивидуальный курс по ламинирования ресниц.</h4>
+                                        <ol class="courses__details-list">
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Основы ламинирования ресниц</h5>
+                                            <p>- Преимущества процедуры</p>
+                                        </li>
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Структура и рост ресниц</h5>
+                                            <p>- Строение ресниц: фазы роста и особенности цикла.</p>
+                                            <p>- Оценка состояния ресниц перед процедурой ( пористость, длина, вниз растущие ресницы</p>
+                                        </li>
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Препараты и материалы для ламинирования</h5>
+                                            <p>- Разбор составов для ламинирования.</p>
+                                            <p>- Обзор валиков и их отличия.</p>
+                                        </li>
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Пошаговая технология ламинирования ресниц</h5>
+                                            <p>- Схемы нанесения составов.</p>
+                                            <p>- Суть работы составов и как образуется изгиб.</p>
+                                            <p>- Выбор правильного размера валика для разных видов ресниц.</p>
+                                            <p>- Моделирование изгиба в зависимости от желаемого эффекта.</p>
+                                        </li>
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Особенности работы с клиентами</h5>
+                                            <p>- Основы цвета.</p>
+                                            <p>- Техники окрашивания.</p>
+                                            <p>- Подбор цвета в зависимости от типа кожи и волос клиента.</p>
+                                        </li>
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Топ ошибки в ламинировании ресниц.</h5>
+                                            <p>- Подробный разбор ошибок и как их избежать( провисы, перекруты, отсутствие желаемого изгиба).</p>
+                                            <p>- Исправление неправильного ламинирования.</p>
+                                        </li>
+                                        <li class="courses__details-item">
+                                            <h5 class="courses__details-subtitle">Уход за ресницами после ламинирования</h5>
+                                            <p>- Рекомендации по уходу за ресницами.</p>
+                                            <p>- Противопоказания к процедуре.</p>
+                                            <p>- Аллергические реакции.</p>
+                                        </li>
+                                    </ol>
+                                        <div class="courses__details__certificate">
+                                            <p>Этот курс дает полное понимание процедуры и навыки для уверенной работы с клиентами, позволяя выполнять процедуру ламинирования ресниц на высоком профессиональном уровне.</p>
+                                            <p>Методическое пособие и связь со мной остается навсегда!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__item courses__item_brow-base">
+                                <h3 class="courses__title clr">BROWBASE</h3>
+                                <div class="courses__description">
+                                    <p class="courses__text">Базовый курс по бровям для начинающих мастеров с нуля.</p>
+                                    <p class="courses__text">Индивидуальное 2-х дневное обучение с теорией и практикой.</p>
+                                    <p class="courses__text">Стань БРОВИСТОМ за 2 дня.</p>
+                                </div>
+                                <div class="courses__more">
+                                    <a href="#brow-base" class="courses__more-link">Подробнее...</a>
+                                </div>
+                                <div class="courses__details" id="brow-base" style="display: none;">
+                                    <div class="courses__details-content">
+                                        <div class="courses__details-btn">
+                                            <img src="img/delete-icon.png" class="details-icon" alt="delete"/>
+                                        </div>
+                                        <h4 class="courses__details-title clr">Базовый курс по оформлению бровей.</h4>
+                                        <ol class="courses__details-list">
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Введение в профессию бровиста</h5>
+                                                <p>- кто такой бровист и его роль в индустрии красоты</p>
+                                                <p>- обзор современных тенденций и стилей оформления бровей.</p>
+                                                <p>- необходимые инструменты и материалы для работы.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Анатомия и строение бровей</h5>
+                                                <p>- Строение волоса.</p>
+                                                <p>- Функции бровей на лице.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Определение формы лица и подбор формы бровей</h5>
+                                                <p>- Как определить типы лица и связь их с формой бровей.</p>
+                                                <p>- Как подобрать форму бровей для разных типов лица.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Методы коррекции бровей</h5>
+                                                <p>- Этапы подготовки кожи перед коррекцией.</p>
+                                                <p>- Техники коррекции: пинцетом, воском.</p>
+                                                <p>- Ошибки при коррекции бровей и как их избежать.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Колористика бровей</h5>
+                                                <p>- Основы цвета.</p>
+                                                <p>- Техники окрашивания.</p>
+                                                <p>- Подбор цвета в зависимости от типа кожи и волос клиента.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Ламинирование бровей</h5>
+                                                <p>- Что такое ламинирование бровей и как оно работает.</p>
+                                                <p>- Показания и противопоказания.</p>
+                                                <p>- Пошаговая техника выполнения процедуры.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Моделирование бровей с учетом индивидуальных особенностей</h5>
+                                                <p>- Работа с различными типами волос (жесткие, редкие, светлые).</p>
+                                                <p>- Коррекция асимметричных бровей.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Уход за бровями</h5>
+                                                <p>- Рекомендации по уходу за бровями после коррекции и окрашивания.</p>
+                                                <p>- Рекомендации по использованию средств для роста и укрепления бровей.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Санитарные нормы и гигиена</h5>
+                                                <p>- Дезинфекция инструментов.</p>
+                                                <p>- Как обезопасить себя и клиента при проведении процедур.</p>
+                                            </li>
+                                            <li class="courses__details-item">
+                                                <h5 class="courses__details-subtitle">Практическая отработка на 4-х моделях</h5>
+                                                <p>- Отработка техник коррекции и окрашивания на моделях.</p>
+                                                <p>- Анализ ошибок и способы их исправления.</p>
+                                            </li>
+                                        </ol>
+                                        <div class="courses__details__certificate">
+                                            <p>Выдается методическое пособие и сертификат о прохождении курса.</p>
+                                            <p>Связь со мной по всем вопросам остается навсегда!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="s4">
+                <div class=" container">
+                    <div class="contacts__container">
+                        <div class="title">
+                            <h2 class="title__page">Контакты</h2>
+                        </div>
+                        <div class="contacts__info">
+                            <div class="contacts__cta">
+                                <h3 class="contacts__title clr">Остались вопросы?</h3>
+                                <p>Свяжитесь со мной удобным способом</p>
+                                <div class="contacts__cta-buttons">
+                                    <div class="button button_in bgd">instagram</div>
+                                    <div class="button button_wh bgd">whatsapp</div>
+                                </div>
+                            </div>
+                            <div class="contacts__location">
+                                <h3 class="contacts__title clr">Локация</h3>
+                                <p class="contacts__address">Georgia, Tbilisi</p>
+                                <p class="contacts__address">44 Ilia Chavchavadze Avenue</p>
+                            </div>
+                        </div>
+                        <div class="contacts__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.502006484532!2d44.76178887916965!3d41.70968510774432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447333b02245b7%3A0xd9fdcd815074e575!2zNDQgSWxpYSBDaGF2Y2hhdmFkemUgQXZlbnVlLCBUJ2JpbGlzaSwg0JPRgNGD0LfQuNGP!5e0!3m2!1sru!2sua!4v1725190410433!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer bdb">
+            <div class="container">
+                <div class="footer__container">
+                    <p>by Al.Se.La</p>
+                    <p>© 2024</p>
+                </div>
             </div>
-        </div>
-        <footer class="bdb">
-            <p>© 2024 Al.Se.La</p>
-            <h3>Table of Contents</h3>
         </footer>
     </div>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>
