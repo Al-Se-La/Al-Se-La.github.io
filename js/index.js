@@ -31,9 +31,6 @@ function clickOpen(e) {
 btn.forEach((v) => {
     v.addEventListener('click', clickOpen);
 });
-//"https://wa.me/995571206128"
-//"https://api.whatsapp.com/send?phone=995571206128"
-//"https://instagram.com/lavrina.lami/"
 
 function toggleMenu() {
     let windowWidth = window.innerWidth;
