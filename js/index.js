@@ -61,7 +61,7 @@ function activateMenuItem() {
 }
 window.addEventListener('scroll', activateMenuItem);
 
-function detailsToggle(key=false){
+function detailsToggle(key=''){
     if(!key){
     Object.values(detailsLinks).forEach((v)=>{
         document.getElementById(v).style.display = 'none';
