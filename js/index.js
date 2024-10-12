@@ -7,7 +7,8 @@ const menuItems = document.querySelectorAll('.menu__item');
 const courses = document.getElementById('s3');
 const imgDetails = document.getElementsByClassName('details-icon');
 const socialLinks = {
-    INSTAGRAM: "https://instagram.com/lavrina.lami/",
+    // INSTAGRAM: "https://instagram.com/lavrina.lami/",
+    INSTAGRAM: "https://ig.me/m/lavrina.lami",
     WHATSAPP: "https://wa.me/995571206128"
 };
 const detailsLinks = {

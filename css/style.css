@@ -972,7 +972,7 @@ h3 {
     position: absolute;
     top: 0;
     right: 0;
-    height: 6vh;
+    height: 4vh;
 }
 h4.courses__details-title{
     margin-bottom: 20px;
@@ -981,17 +981,20 @@ h4.courses__details-title{
     text-shadow: 1px 1px 1px white;
 }
 h5.courses__details-subtitle{
+    font-weight: bold;
     /*font-size: 17px;*/
-}
-.courses__details-item p{
-    font-size: 14px;
 }
 .courses__details-list{
     /*column-count: 2;*/
     padding-left: 2%;
 }
 .courses__details-item{
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+}
+.courses__details-item p{
+    padding-left: 10px;
+    font-size: 14px;
+    color: darkgrey;
 }
 .courses__details__certificate {
     display: flex;
