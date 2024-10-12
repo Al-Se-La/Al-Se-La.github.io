@@ -329,6 +329,8 @@ h3 {
     }
 
     .menu__item a {
+        display: block;
+        min-width: 144px;
         text-align: left;
         font-size: 32px;
         font-weight: bold;
@@ -975,7 +977,14 @@ h3 {
 h4.courses__details-title{
     margin-bottom: 20px;
     text-align: center;
+    font-size: 18px;
     text-shadow: 1px 1px 1px white;
+}
+h5.courses__details-subtitle{
+    /*font-size: 17px;*/
+}
+.courses__details-item p{
+    font-size: 14px;
 }
 .courses__details-list{
     /*column-count: 2;*/
@@ -986,18 +995,17 @@ h4.courses__details-title{
 }
 .courses__details__certificate {
     display: flex;
-    flex-direction: column; /* Располагаем параграфы вертикально */
-    align-items: center; /* Центрируем по горизонтали */
-    justify-content: center; /* Центрируем по вертикали */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: left; /* Текст внутри параграфов выравнивается по левому краю */
     padding: 20px; /* Опционально, чтобы был отступ */
-    /*border: 2px solid red;*/
+    gap: 20px;
 }
 
 .courses__details__certificate p {
     width: 100%; /* Все параграфы имеют одинаковую ширину */
     max-width: 500px; /* Опционально: ограничение ширины, чтобы текст не был слишком растянут */
-    /*border: 2px solid red;*/
 }
 
 /*-----media courses-----*/
