@@ -900,7 +900,6 @@ h3 {
 }
 /*------courses-more------*/
 .courses__details{
-    /*padding: 3% 6% 0 6%;*/
     position: fixed;
     top: 8vh;
     left: 0;
@@ -911,13 +910,10 @@ h3 {
     /*background-blend-mode: darken;*/
     transition: 0.5s;
     overflow-y: auto;
-    z-index: 3;
-    /*border: 2px solid red;*/
-}
-.courses__details {
-    overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    z-index: 3;
+    /*border: 2px solid red;*/
 }
 
 .courses__details::-webkit-scrollbar {
@@ -926,7 +922,7 @@ h3 {
 }
 .courses__details-content{
     padding: 0 6% 3% 6%;
-    /*max-height: calc(100vh - 8vh);*/
+    max-height: 92dvh;
     /*overflow-y: auto;*/
     /*border: 2px solid red;*/
 }
