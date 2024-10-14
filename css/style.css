@@ -922,7 +922,7 @@ h3 {
 }
 .courses__details-content{
     padding: 0 6% 3% 6%;
-    max-height: 92dvh;
+    max-height: 100dvh;
     /*overflow-y: auto;*/
     /*border: 2px solid red;*/
 }
