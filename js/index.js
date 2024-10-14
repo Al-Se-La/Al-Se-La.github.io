@@ -21,12 +21,8 @@ function openLink(v) {
 }
 
 function openSocialLinks(e) {
-    if (e.type === 'click') {
         let target = e.target.innerText.toUpperCase();
-        Object.keys(socialLinks).filter((k) => {
-            k === target ? openLink(socialLinks[k]) : null;
-        })
-    }
+        socialLinks.hasOwnProperty(target) ? openLink(socialLinks[target]) : null;
 }
 btn.forEach((v) => {
     v.addEventListener('click', openSocialLinks);
