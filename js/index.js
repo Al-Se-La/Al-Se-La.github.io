@@ -4,7 +4,7 @@ const btn = document.querySelectorAll('.button'),
  img = document.getElementsByClassName('menu-icon'),
  sections = document.querySelectorAll('section'),
  menuItems = document.querySelectorAll('.menu__item'),
- courses = document.getElementById('s3');
+ courses = document.getElementById('courses');
  imgDetails = document.getElementsByClassName('details-icon');
 const socialLinks = {
     // INSTAGRAM: "https://instagram.com/lavrina.lami/",
